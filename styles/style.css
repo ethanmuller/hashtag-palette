@@ -10,8 +10,15 @@ body {
   }
 }
 
+.velociwraptor {
+  height: calc(100vh - 45px);
+  overflow-y: hidden;
+  position: fixed;
+}
+
 .deselected-tags {
-  height: 50vh;
+  /* height: 50vh; */
+  height: calc((100vh - 45px) / 2);
   padding: 0.5em 0;
   width: 100%;
   box-sizing: border-box;
@@ -26,7 +33,8 @@ body {
   position: relative;
   background: white;
   z-index: 1;
-  height: 50vh;
+  /* height: 50vh; */
+  height: calc((100vh - 45px) / 2);
   width: 100%;
   box-sizing: border-box;
   overflow: auto;
