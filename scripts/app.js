@@ -81,7 +81,7 @@ function selectEl(el) {
   el.classList.remove(deselectedClass);
   el.classList.add(selectedClass);
   updateSelected();
-  boop('G5');
+  boop(783 + (Math.random() - 0.5) * 200);
 }
 
 function deselectEl(el) {
@@ -89,7 +89,7 @@ function deselectEl(el) {
   el.classList.remove(selectedClass);
   el.classList.add(deselectedClass);
   updateSelected();
-  boop('Bb4');
+  boop(400 + (Math.random() - 0.5) * 200);
 }
 
 function updateSelected() {
